@@ -1,0 +1,1 @@
+console.log('This is module3 -> feature2 -> index');

@@ -1,0 +1,17 @@
+{
+  "name": "directory-search",
+  "version": "1.0.0",
+  "description": "search inside given directory or current directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "start": "node server.js"
+  },
+  "author": "Siva Krishnan Balakrishnan",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
