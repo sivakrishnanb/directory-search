@@ -2,10 +2,46 @@
 
 Search through the given folder and list the files which matches 'TODO' text.
 
-### Prerequisites
+## Prerequisites
 
 Solution doesn't depends on any of the node module packages for development. Have used Mocha & Chai for unit testing only.
 
+## Usage
+
+### Import and use the search library
+
+#### Using await to resolve the promise
+
+```
+var directorySearch = require("../lib").default;
+const results = await directorySearch("text to search", "optional directory else will use root directory");
+```
+
+#### Using traditional Promise with then and catch
+
+```
+var directorySearch = require("../lib").default;
+directorySearch("text to search", "optional directory else will use root directory")
+.then(results => console.log(results))
+.catch(error => console.log(error));
+
+```
+
+#### To search in the root folder
+
+```
+var directorySearch = require("../lib").default;
+const results = await directorySearch("TODO");
+```
+
+#### To search in the given folder
+
+```
+var directorySearch = require("../lib").default;
+const results = await directorySearch("TODO", "sample-folder");
+```
+
+You should now see a HTML page with 'Fetch Files with TODO' button. Click on the button, to display the files below.
 ## Getting Started
 
 As the development environment doesn't depend on any other node modules, it is good enough to just start the server with below command. Server will be started in port 3000
