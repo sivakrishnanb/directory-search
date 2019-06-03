@@ -14,7 +14,7 @@ Solution doesn't depends on any of the node module packages for development. Hav
 
 ```
 var directorySearch = require("../lib").default;
-const results = await directorySearch("text to search", "optional directory else will use root directory");
+const results = await directorySearch("search text", "optional directory else will use root directory");
 ```
 
 #### Using traditional Promise with then and catch
