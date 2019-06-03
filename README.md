@@ -63,13 +63,13 @@ You should now see a HTML page with 'Fetch Files with TODO' button. Click on the
 
 ## Running the tests
 
-### To install the tooling dependencies for unit testing
+#### To install the tooling dependencies for unit testing
 
 ```
 npm install
 ```
 
-### To run the unit test 
+#### To run the unit test 
 
 ```
 npm test
