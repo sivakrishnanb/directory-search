@@ -22,7 +22,7 @@ describe("Directory Search", () => {
     const results = await directorySearch("TODO", "sample-folder/module3");
     expect(results).to.have.lengthOf(1);
   });
-  it("should return error when the directory is not available", async () => {
+  it("should return error code as 'ENOENT' when the directory is not available", async () => {
     try {
       const books = await directorySearch("TODO", "unknown");
     } catch (error) {

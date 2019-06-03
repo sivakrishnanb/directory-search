@@ -1,1 +1,51 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Directory Search for TODO Text</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        button {
+            padding: 20px;
+            border: none;
+            background: green;
+            color: #fff;
+            min-width: 150px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .files {
+            margin: 20px;
+            padding: 0 20px;
+            background: green;
+            color: #fff;
+        }
+        .files li {
+            margin: 0px;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <h1>Directory Search for TODO text</h1>
+    <button onClick="fetchFilesWithTODO()">Fetch Files with TODO</button>
+    <ol id="fileList" class="files"></ol>
+    <script type="text/javascript">
+        function fetchFilesWithTODO() {
+            document.getElementById('fileList').innerHTML = 'Loading files...'
+            fetch('/search-todo')
+                .then(response => response.json())
+                .then(response => document.getElementById('fileList').innerHTML = response.results ? response.results.map(file => `<li>${file}</li>`).join('') : response.error)
+                .catch(error => document.getElementById('fileList').innerHTML = JSON.stringify(error));
+        }
+    </script>
+  </body>
+</html>

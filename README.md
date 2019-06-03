@@ -1,56 +1,29 @@
 # Directory Search for 'TODO' text
 
-It's common to see TODOs in code. It's also common for TODOs to remain as to-dos for a long time. One way we can solve this problem is to have a service that runs through all files in a given directory and checks for any instances of the key-phrase "TODO", flagging each one of them out for humans to continue working on them.
-
-## Getting Started
-
-```
-npm install
-```
-
+Search through the given folder and list the files which matches 'TODO' text.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Solution doesn't depends on any of the node module packages for development. Have used Mocha & Chai for unit testing only.
+
+## Getting Started
+
+As the development environment doesn't depend on any other node modules, it is good enough to just start the server with below command. Server will be started in port 3000
 
 ```
-Give examples
+npm start
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Navigate to
 
 ```
-Give the example
+http://localhost:3000
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+You should now see a HTML page with 'Fetch Files with TODO' button. Click on the button, to display the files list below.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+npm install && npm test
 ```
