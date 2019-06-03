@@ -26,6 +26,7 @@ directorySearch("text to search", "optional directory else will use root directo
 .catch(error => console.log(error));
 
 ```
+### Example
 
 #### To search in the root folder
 
@@ -41,7 +42,6 @@ var directorySearch = require("../lib").default;
 const results = await directorySearch("TODO", "sample-folder");
 ```
 
-You should now see a HTML page with 'Fetch Files with TODO' button. Click on the button, to display the files below.
 ## Getting Started
 
 As the development environment doesn't depend on any other node modules, it is good enough to just start the server with below command. Server will be started in port 3000
