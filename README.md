@@ -26,7 +26,6 @@ var directorySearch = require("../lib").default;
 directorySearch("search text", "optional directory else will use root directory")
     .then(results => console.log(results))
     .catch(error => console.log(error));
-
 ```
 ### Example
 
