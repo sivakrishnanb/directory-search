@@ -3,7 +3,7 @@ var fs = require("fs"),
   directorySearch = require("./lib").default;
 
 http
-  .createServer(function(req, res) {
+  .createServer((req, res) => {
     var url = req.url;
     if (url === "/search-todo") {
       res.setHeader("Content-Type", "application/json");
@@ -15,9 +15,7 @@ http
       res.end(fs.readFileSync(__dirname + "/index.html"));
     } else {
       res.writeHead(404, { "Content-Type": "text/json" });
-      res.end(JSON.stringify({error: "Requested resource not found"}));
+      res.end(JSON.stringify({ error: "Requested resource not found" }));
     }
   })
-  .listen(3000, function() {
-    console.log("server start at port 3000");
-  });
+  .listen(3000, () => console.log("server started at port 3000"));

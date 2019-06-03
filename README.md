@@ -4,9 +4,9 @@ Search through the given folder and list the files which matches 'TODO' text.
 
 ## Prerequisites
 
-Solution doesn't depends on any of the node module packages for development. Have used Mocha & Chai for unit testing only.
+We have used Node js. Solution doesn't depends on any of the node module packages for development. Have used Mocha & Chai for unit testing only.
 
-## Usage
+## Getting Started
 
 ### Import and use the search library
 
@@ -45,7 +45,7 @@ var directorySearch = require("../lib").default;
 const results = await directorySearch("TODO", "sample-folder");
 ```
 
-## Getting Started
+## Running the app
 
 As the development environment doesn't depend on any other node modules, it is good enough to just start the server with below command. Server will be started in port 3000
 
@@ -63,6 +63,14 @@ You should now see a HTML page with 'Fetch Files with TODO' button. Click on the
 
 ## Running the tests
 
+### To install the tooling dependencies for unit testing
+
 ```
-npm install && npm test
+npm install
+```
+
+### To run the unit test 
+
+```
+npm test
 ```
