@@ -21,7 +21,7 @@ const results = await directorySearch("text to search", "optional directory else
 
 ```
 var directorySearch = require("../lib").default;
-directorySearch("text to search", "optional directory else will use root directory")
+directorySearch("search text", "optional directory else will use root directory")
 .then(results => console.log(results))
 .catch(error => console.log(error));
 
