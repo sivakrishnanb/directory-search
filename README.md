@@ -14,6 +14,7 @@ Solution doesn't depends on any of the node module packages for development. Hav
 
 ```
 var directorySearch = require("../lib").default;
+
 const results = await directorySearch("search text", "optional directory else will use root directory");
 ```
 
@@ -21,9 +22,10 @@ const results = await directorySearch("search text", "optional directory else wi
 
 ```
 var directorySearch = require("../lib").default;
+
 directorySearch("search text", "optional directory else will use root directory")
-.then(results => console.log(results))
-.catch(error => console.log(error));
+    .then(results => console.log(results))
+    .catch(error => console.log(error));
 
 ```
 ### Example
@@ -32,6 +34,7 @@ directorySearch("search text", "optional directory else will use root directory"
 
 ```
 var directorySearch = require("../lib").default;
+
 const results = await directorySearch("TODO");
 ```
 
@@ -39,6 +42,7 @@ const results = await directorySearch("TODO");
 
 ```
 var directorySearch = require("../lib").default;
+
 const results = await directorySearch("TODO", "sample-folder");
 ```
 
