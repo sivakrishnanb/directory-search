@@ -20,7 +20,7 @@ Navigate to
 http://localhost:3000
 ```
 
-You should now see a HTML page with 'Fetch Files with TODO' button. Click on the button, to display the files list below.
+You should now see a HTML page with 'Fetch Files with TODO' button. Click on the button, to display the files below.
 
 ## Running the tests
 
